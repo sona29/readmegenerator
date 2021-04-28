@@ -5,49 +5,41 @@ const fs = require('fs');
 const generateReadme = (answers) =>
 `# ${answers.title}
 
+
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ### Table of Contents
 
-- [Description](#description)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [Questions](#questions)
-- [License](#license)
-- [Walk-through Video](#walk-through-video)
-- [Application Image](#application-image)
+${answers.table}
 
 ## Description
 
-This readme generator makes it easy for you to create perfect readme files by just answering a few questions! Its important for your work to have good documentation so others can contribute and use it with ease. Make a good first impression and install the readme generator.
+${answers.description}
 
 ## Installation
 
-Getting started make sure you have node.js and npm installed on your system.
-
-1. Create a clone of this repository ``git clone https://github.com/markwilson107/Readme-Generator.git``
-2. Navigate to the directory of the cloned repository in your terminal.
-3. Install the required npm modules by running ``npm install`` in your terminal.
-4. Use ``node index.js`` to start the readme generator.
-
-If you have any trouble please refer to the walk-through video.
+${answers.installation}
 
 ## Usage
 
-Navigate to your project directory in your terminal application and run ``node index.js`` command. Follow the instructions and a ``README.md`` file will be created.
+${answers.usage}
+
+## Test
+
+${answers.test}
 
 ## Contributing
 
-If you want to contribute please create and issue or pull-request and I will get back to you as soon as possible.
+${answers.contribution}
 
 ## Questions
 
 If you have any questions feel free to contact me here:
 
- ##### Github: [github.com/markwilson107](https://github.com/markwilson107)
+  Github Username: ${answers.gusername}
 
- ##### Email: [markwilson107@hotmail.com](mailto:markwilson107@hotmail.com?subject=[GitHub])
+  Email: ${answers.email}
 
 ## License
 
@@ -80,37 +72,37 @@ inquirer
       name: 'title',
       message: 'What is the title of your project?',
     },
-    // {
-    //   type: 'editor',
-    //   name: 'description',
-    //   message: 'Please enter your projects description',
-    // },
-    // {
-    //   type: 'editor',
-    //   name: 'table',
-    //   message: 'Please enter table of contents',
-    // },
-    // {
-    //   type: 'input',
-    //   name: 'installation',
-    //   message: 'Please enter the installation instructions',
-    // },
-    // {
-    //   type: 'input',
-    //   name: 'github',
-    //   message: 'What is the usage of your project',
-    // },
-    // {
-    //     type: "list",
-    //     name: "licence",
-    //     message: "What licence is relevant to this project?",        
-    //     choices: ["MIT", "Apache 2.0", "BSD3", "None"]
-    // },
-    // {
-    //     type: "input",
-    //     name: "contribution",
-    //     message: "What does the user need to know about contributing to the repo?",    
-    // },
+    {
+      type: 'editor',
+      name: 'description',
+      message: 'Please enter your projects description',
+    },
+    {
+      type: 'editor',
+      name: 'table',
+      message: 'Please enter table of contents',
+    },
+    {
+      type: 'input',
+      name: 'installation',
+      message: 'Please enter the installation instructions',
+    },
+    {
+      type: 'input',
+      name: 'usage',
+      message: 'What is the usage of your project',
+    },
+    {
+        type: "list",
+        name: "licence",
+        message: "What licence is relevant to this project?",        
+        choices: ["MIT", "Apache 2.0", "BSD3", "None"]
+    },
+    {
+        type: "input",
+        name: "contribution",
+        message: "What does the user need to know about contributing to the repo?",    
+    },
     {
         type: "input",
         name: "test",
