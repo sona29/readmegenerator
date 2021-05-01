@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+// function to generate license
 const generateLicense = (license) =>
 {
   if(license === 'MIT')
@@ -22,7 +23,7 @@ const generateLicense = (license) =>
 
 }
 
-
+// function to generate readme
 const generateReadme = (answers) =>
 { 
 return `# ${answers.title}
@@ -73,9 +74,6 @@ If you have any questions feel free to contact me here:
 
 ${generateLicense(answers.license)}
 
-
-You have the freedom to do as you like with this permissive software, as long as an original copy and license notice is included. I cannon be held liable for this software.
-
 ## Walk-through Video
 
 ##### Video: [Readme Generator Walk-through](https://drive.google.com/file/d/1QvjLTv_Rml1mOnN876eHSK2Oz3sm2nkT/view?usp=sharing)`
@@ -105,11 +103,7 @@ inquirer
       name: 'description',
       message: 'Please enter your projects description',
     },
-    {
-      type: 'editor',
-      name: 'table',
-      message: 'Please enter table of contents',
-    },
+   
     {
       type: 'input',
       name: 'installation',
