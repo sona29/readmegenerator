@@ -31,9 +31,9 @@ For instruction on how to use this project, please refer to walk-through video.
 
 Create unit testing
 
-## Contributing
+## How to Contribute
 
-If you want to contribute please create and issue or pull-request and I will get back to you as soon as possible.
+Please feel free in making contribution to this repository. But please first discuss the change via email with me. I will try to get back to you as soon as possible.
 
 ## Questions
 
