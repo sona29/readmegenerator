@@ -25,7 +25,7 @@ This project generates professional README file using node.js. The readme file i
 
 ## Usage
 
-Navigate to your project directory in your terminal application and run node index.js command. Follow the instructions and a README.md file will be created.
+For instruction on how to use this project, please refer to walk-through video.
 
 ## Test
 
