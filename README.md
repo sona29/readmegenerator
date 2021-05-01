@@ -17,6 +17,12 @@ This project generates professional README file using node.js. The readme file i
 
 ## Installation
 
+- To install this project make sure you have node.js and npm installed on your system.
+- Create a clone of repo ‘https://github.com/sona29/readmegenerator’
+- Navigate to the local directory of the cloned repo in your terminal.
+- Install the required npm modules by running npm install in your terminal.
+- Enter command ‘node index.js’ in your terminal to start the readme generator.
+
 ## Usage
 
 Navigate to your project directory in your terminal application and run node index.js command. Follow the instructions and a README.md file will be created.
@@ -31,7 +37,7 @@ If you want to contribute please create and issue or pull-request and I will get
 
 ## Questions
 
-If you have any questions feel free to contact me:
+If you have any questions please feel free to contact me:
 
 Github Username: sona29
 
