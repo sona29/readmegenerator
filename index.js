@@ -1,14 +1,23 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const generateLicense = (licence) =>
+const generateLicense = (license) =>
 {
-  if(licence === 'MIT')
+  if(license === 'MIT')
   {
     return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
   }
+  else if (license === 'Apache 2.0'){
+    return '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)';
+  }
+  else if (license === 'BSD3'){
+    return '[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)';
+  }
+  else if (license === 'BSD2'){
+    return '[![License](https://img.shields.io/badge/License-BSD%202--Clause-orange.svg)](https://opensource.org/licenses/BSD-2-Clause)';
+  }
   else{
-    return '';
+    return 'None';
   }
 
 }
@@ -19,11 +28,18 @@ const generateReadme = (answers) =>
 return `# ${answers.title}
 
 
-${generateLicense(answers.licence)}
+${generateLicense(answers.license)}
 
 ### Table of Contents
 
-${answers.table}
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Test](#test)
+- [Contribution](#contribution)
+- [License](#license)
+
+
 
 ## Description
 
@@ -55,19 +71,16 @@ If you have any questions feel free to contact me here:
 
 ## License
 
-if(answers.licence === "MIT")
+${generateLicense(answers.license)}
 
-[MIT](https://opensource.org/licenses/MIT)
 
 You have the freedom to do as you like with this permissive software, as long as an original copy and license notice is included. I cannon be held liable for this software.
 
 ## Walk-through Video
 
-##### Video: [Readme Generator Walk-through](https://drive.google.com/file/d/1QvjLTv_Rml1mOnN876eHSK2Oz3sm2nkT/view?usp=sharing)
+##### Video: [Readme Generator Walk-through](https://drive.google.com/file/d/1QvjLTv_Rml1mOnN876eHSK2Oz3sm2nkT/view?usp=sharing)`
 
-## Application Image
 
- ![Image of Application]( https://github.com/markwilson107/Readme-Generator/blob/main/images/deployed-application.png)`;
 }
 
 inquirer
@@ -109,9 +122,9 @@ inquirer
     },
     {
         type: "list",
-        name: "licence",
-        message: "What licence is relevant to this project?",        
-        choices: ["MIT", "Apache 2.0", "BSD3", "None"]
+        name: "license",
+        message: "What license is relevant to this project?",        
+        choices: ["MIT", "Apache 2.0", "BSD3", "BSD2", "None"]
     },
     {
         type: "input",
