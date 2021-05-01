@@ -1,13 +1,25 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+const generateLicense = (licence) =>
+{
+  if(licence === 'MIT')
+  {
+    return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)';
+  }
+  else{
+    return '';
+  }
+
+}
+
 
 const generateReadme = (answers) =>
-`# ${answers.title}
+{ 
+return `# ${answers.title}
 
 
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+${generateLicense(answers.licence)}
 
 ### Table of Contents
 
@@ -43,6 +55,8 @@ If you have any questions feel free to contact me here:
 
 ## License
 
+if(answers.licence === "MIT")
+
 [MIT](https://opensource.org/licenses/MIT)
 
 You have the freedom to do as you like with this permissive software, as long as an original copy and license notice is included. I cannon be held liable for this software.
@@ -54,6 +68,7 @@ You have the freedom to do as you like with this permissive software, as long as
 ## Application Image
 
  ![Image of Application]( https://github.com/markwilson107/Readme-Generator/blob/main/images/deployed-application.png)`;
+}
 
 inquirer
   .prompt([
@@ -108,6 +123,7 @@ inquirer
         name: "test",
         message: "What command should be run to run tests?",    
     },
+
   ])
   .then((answers) => {
     const htmlPageContent = generateReadme(answers);
