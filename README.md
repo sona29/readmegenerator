@@ -1,6 +1,6 @@
 # Readme Generator
 
-None
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ### Table of Contents
 
@@ -53,7 +53,7 @@ Email: sona.shrestha004@gmail.com
 
 ## License
 
-None
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Walk-through Video
 
