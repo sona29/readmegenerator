@@ -73,9 +73,7 @@ If you have any questions feel free to contact me:
 
 ${generateLicense(answers.license)}
 
-## Walk-through Video
-
-##### Video: [Readme Generator Walk-through](https://drive.google.com/file/d/1QvjLTv_Rml1mOnN876eHSK2Oz3sm2nkT/view?usp=sharing)`
+`
 
 
 }
