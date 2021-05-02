@@ -57,7 +57,7 @@ ${answers.usage}
 
 ${answers.test}
 
-## How to Contribute
+## Contribution
 
 ${answers.contribution}
 
