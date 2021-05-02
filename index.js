@@ -104,14 +104,14 @@ inquirer
     },
    
     {
-      type: 'input',
+      type: 'text',
       name: 'installation',
       message: 'Please enter the installation instructions',
     },
     {
       type: 'input',
       name: 'usage',
-      message: 'What is the usage of your project',
+      message: 'What does the user need to know about using the repo?',
     },
     {
         type: "list",
