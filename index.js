@@ -41,7 +41,6 @@ ${generateLicense(answers.license)}
 - [License](#license)
 
 
-
 ## Description
 
 ${answers.description}
@@ -58,13 +57,13 @@ ${answers.usage}
 
 ${answers.test}
 
-## Contributing
+## How to Contribute
 
 ${answers.contribution}
 
 ## Questions
 
-If you have any questions feel free to contact me here:
+If you have any questions feel free to contact me:
 
   Github Username: ${answers.gusername}
 
