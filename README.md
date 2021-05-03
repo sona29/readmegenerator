@@ -49,6 +49,10 @@ Github Username: sona29
 
 Email: sona.shrestha004@gmail.com
 
+## Mockup
+
+![alt text](images/readme.PNG)
+
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
