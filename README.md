@@ -1,4 +1,4 @@
-# Readme Generator
+# Professional Readme Generator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -20,8 +20,6 @@ This project generates professional README file using node.js. The readme file i
 To run this project, install it locally using npm. Make sure you have node.js installed on your systems.
 
 ```
-- $ npm init -y
-- $ npm i inquirer
 - $ npm install
 - $ node index.js
 ```
