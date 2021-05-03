@@ -37,7 +37,7 @@ npm test
 
 ```
 
-## How to Contribute
+## Contribution
 
 Please feel free in making contribution to this repository. But please first discuss the change via email with me. I will try to get back to you as soon as possible.
 
